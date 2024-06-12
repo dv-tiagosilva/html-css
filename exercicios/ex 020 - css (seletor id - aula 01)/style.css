@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* 
+    Tudo em HTML q é id = em CSS é #
+    Tudo em HTML q é class = em CSS é .
+ */
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(18, 81, 18);
+}
+
+h1#principal {
+    text-align: center;
+    color: white;
+    background-color: rgb(18, 81, 18);
+}
+
+/* também dá pra deixar sem o h1, que ficaria:
+
+#principal {
+    text-align: center;
+} */
+
+h2 {
+    color: #2E7C29;
+}
+
+.basic {
+    color: #2E7C29;
+}
+
+.intermediate {
+    color: #a5b13c;
+}
+
+.advanced {
+    color: #EB584D;
+}
+
+.destaque {
+    font-family: 'Times New Roman', Times, serif;
+}

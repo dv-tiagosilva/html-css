@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url();
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* 
+            Medidas absolutas: cm (centímetro), mm(milímetro), in (polegadas), px (pixels), pt (ponto), pc (paica)
+
+            Medidas relativas (relativas ao tamanho natural): em, ex, rem, vm, vh 
+            
+            */
+            font-size: 1em;
+            font-weight: 400;
+            /* Valores aceitos no font-weight
+            a)valores nominais: lighter, normal, bold, bolder
+            b)valores numéricos: de 100 em 100, do 100 ao 900*/
+
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font 
+            ordem:
+            1)font-style
+            2)font-weight
+            3)font-size
+            4)font-family;*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font:bold 2em sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore maiores necessitatibus qui earum praesentium quidem. Dolore quae, exercitationem hic expedita corporis repellat tempora eaque officiis enim earum numquam, pariatur sint!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officiis architecto magnam eos quo necessitatibus autem repudiandae quaerat nobis provident laborum minus, corrupti esse, voluptatibus voluptates rerum! Blanditiis, ipsa ullam.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officia nostrum blanditiis totam! Maiores, iste velit? Illum placeat est sed harum sit debitis quos deleniti laborum numquam architecto! Tempore, commodi!</p>
+
+</body>
+</html>

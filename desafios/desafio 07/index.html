@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 07: Imagens FLexíveis</title>
+</head>
+<body>
+    <h1>Criando Imagens Responsivas ao tamanho do Display</h1>
+    <p>Observe a mudança da imagem abaixo conforme o tamanho de tela do seu display</p>
+
+    <picture>
+        <source media="(max-width: 790px)" srcset="imagem/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagem/paisagem-m.png" type="image/png">
+        <img src="imagem/paisagem-g.png" alt="Imagem de paisagem">
+    </picture>
+
+</body>
+</html>

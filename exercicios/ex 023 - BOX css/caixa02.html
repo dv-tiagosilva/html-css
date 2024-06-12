@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+            background-color: beige;
+            margin: 0px;
+            
+        }
+
+        header > h1 {
+            text-align: center;
+            background-color: bisque;
+            margin: 21px;
+            border-radius: 10px;
+        }
+
+        nav {
+            text-align: right;
+            color: black;
+            border: 2px solid bisque;
+            margin: 10px 10px 10px 575px;
+            /* box-shadow: 2px 2px 1.8px black; */
+            box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.341);
+        }
+
+        nav > a {
+            font-size: 12px;
+            color: black;
+            border: 5px black;
+            padding: 5px;
+        }
+
+        a:hover {
+            color: bisque;
+            display: inline;
+        }
+
+        main {
+            margin: 21px;
+        }
+
+        article > h2 {
+            background-color: bisque;
+            border-radius: 10px; 
+            /* border-radius = arredondamento */
+        }
+
+        article > p {
+            text-align: justify;
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+            text-align: center;
+            margin: 5px 0px 30px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+         <section id="assuntos">
+            <p>Esportes e Tecnologia</p>
+         </section>
+         
+         <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non assumenda quam voluptatem dolorem odio vero. Veritatis, nemo labore! Accusantium amet facere quod sed? Dicta assumenda, debitis harum molestias at earum.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+         </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Tiju</p>
+    </footer>
+</body>
+</html>
