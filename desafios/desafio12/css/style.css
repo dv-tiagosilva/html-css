@@ -5,131 +5,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 * {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
 }
 
 :root {
-    --font01: "Passion One", sans-serif;
-    --font02: "Sriracha", cursive;
-    --font03: "Verdana", sans-serif;
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: "Passion One", sans-serif;
+    --font03: "Sriracha", cursive;
 }
 
-html {
-    background-color: grey;
-    text-align: left;
+html,body {
+    background-color: darkgrey;
+    min-height: 100vh;
+    font-family: var(--font01);
 }
 
 header {
     background-color: black;
+    color: white;
     text-align: center;
-    padding: 40px;
+    padding: 40px;  
 }
 
 header h1 {
-    color: white;
-    font-family: var(--font01);
-    font-weight: 400;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font02);
     font-size: 10vw;
-    padding-top: 20px;
 }
 
 header > p {
-    color: white;
-    text-decoration: none;
-    line-height: 30px;
-    font-size: 20px;
-    font-family: (--font01);
-    font-weight: lighter;
+    padding-bottom: 50px; 
 }
 
-header a {
-    font-weight: bold;
+header a, footer a {
+    font-weight: bolder;
     text-decoration: none;
     color: white;
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-.section1 {
-    background-color: white;
-    padding: 80px 0px 80px 30px;
-    
-}
-
-.section1 p {
-    font-family: var(--font02), cursive;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font03);
     font-size: 3.5vw;
-    line-height: 50px;
 }
 
-.section2 {
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;  
+}
+
+section.imagem {
+    background: rgba(51, 51, 51, 0.516);
+    color: white;
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.371);
+    background-size: cover;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.329);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.481);
+}
+
+section#img01 {
     background-image: url(../imagens/background001.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: right center;
     background-attachment: fixed;
 }
 
-#box01 {
-    color: white;
-    padding: 80px 0px 80px 30px;
-}
-
-#box01 p {
-    font-family: var(--font02), cursive;
-    font-size: 3.5vw;
-    width: fit-content;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0.384);
-}
-
-.section3 {
-    background-color: white;
-    padding: 80px 0px 80px 30px;
-}
-
-.section3 p {
-    font-family: var(--font02), cursive;
-    font-size: 3.5vw;
-    line-height: 50px;
-}
-
-.section4 {
+section#img02 {
     background-image: url(../imagens/background002.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center right;
     background-attachment: fixed;
-}
-
-#box02 {
-    color: white;
-    padding: 80px 0px 80px 30px;
-}
-
-#box02 p {
-    font-family: var(--font02), cursive;
-    font-size: 3.5vw;
-    width: fit-content;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0.384);
-}
-
-.section5 {
-    background-color: white;
-    padding: 80px 0px 80px 30px;
-}
-
-.section5 p {
-    font-family: var(--font02), cursive;
-    font-size: 3.5vw;
-    line-height: 50px;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 10px;
 }
