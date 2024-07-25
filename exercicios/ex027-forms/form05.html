@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 05</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário 05</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M" required> <label for="isxmas">Masculino </label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esporte" id="iesbas" value="basquete"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esporte" id="iesfut" value="futebol"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esporte" id="iesnat" value="natacao"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esporte" id="iesten" value="tenis"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+        <fieldset> <!--Exemplo de uso do atributo "checked" na tag input!-->
+            <legend>Ativar notificações</legend>
+            <input type="checkbox" name="email" id="iemail" checked> <label for="email">Você gostaria de receber e-mails de nossas novas promoções?</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
